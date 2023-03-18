@@ -139,30 +139,69 @@ let dishes = [
 
 //2. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
 //Filter
-function findItalianFood(){
-  let results = dishes.filter(function (el) {
-    if (el.cuisine === "Italian" && (el.servings > 5) ){
-      return true;    
-    }else {
-      return false;
-    }
-  }
-  );
-    return results;
-}
-let italianFood = findItalianFood();
-console.log("Italian Foods; ",italianFood )
+// function findItalianFood(){
+//   let results = dishes.filter(function (el) {
+//     if (el.cuisine === "Italian" && (el.servings > 5) ){
+//       return true;    
+//     }else {
+//       return false;
+//     }
+  
+//     });
+//     return results;
+// }
+// let italianFood = findItalianFood();
+// console.log("Italian Foods; ",italianFood )
+
 //3. Create a function that will return only dishes whose id number matches their serving count.
 //Filter
+// function findSameDishes(){
+//   let results = dishes.filter(function (el) {
+//     if (el.id === (el.servings)){
+//       return true;    
+//     }else {
+//       return false;
+//     }
+  
+//     });
+//     return results;
+// }
+// let sameDishes = findSameDishes();
+// console.log("Same Dishes; ",sameDishes )
 
 //4. Create a function that will return only dishes whose serving count is even.
+// function findMexicanFood() {
+//     let results = dishes.filter(function (el) {
+//       if (el.servings  % 2 === 0 ) {
+//         return true;
+//       } else {
+//         return false;
+//       }
+//       }
+//       );
+//       return results;
+//     }      
 //Filter
 
 //5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
 //Filter
+function findIngredients() {
+  let results = dishes.filter(function (el) {
+    if (el.ingredients  === "tomato" && "cheese" ) {
+      return true;
+    } else {
+      return false;
+    }
+    }
+    );
+    return results;
+  }  
 
 //6. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
+// function findCuisineTypes(){
+  
+// }
 
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
 //Map
