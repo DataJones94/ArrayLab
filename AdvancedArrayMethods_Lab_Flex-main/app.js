@@ -119,6 +119,7 @@ let dishes = [
 // let mexicanFood = findMexicanFood();
 // console.log("Mexican Foods: ", mexicanFood);
 
+// let response = array.filter( item => condition)  keep as template for easy filters!
 
 // <<<<<<<<<<<<<<<<< PROBLEMS <<<<<<<<<<<<<<<<<
 
@@ -186,22 +187,30 @@ let dishes = [
 //5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
 //Filter
 function findIngredients() {
-  let results = dishes.filter(function (el) {
-    if (el.ingredients  === "tomato" && "cheese" ) {
-      return true;
-    } else {
-      return false;
-    }
-    }
-    );
-    return results;
+  // let results = dishes.filter(function (el) {
+  //   if (el.ingredients  === "tomato" && "cheese" ) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  //   }
+  //   );
+  let results = dishes.filter(el => el.ingredients === "tomato" && "cheese")  
+    
+  return results
   }  
+  let ingredients =findIngredients();
+  console.log("ingredients; ", ingredients)
 
 //6. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
-// function findCuisineTypes(){
-  
-// }
+function findCuisines() {
+ 
+  let results2 = dishes.map((el.cuisine) =>{ //Not sure why the => and ) are mad at me.
+    return results2;
+  })
+}
+console.log(results2)
 
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
 //Map
